@@ -1,0 +1,44 @@
+<div class="header">A <span class="attribution">Same Dev Different Day</span> resource <a href="https://dev.to/danielharding" target="_blank"><i class="fab fa-dev"></i></a><a href="https://twitter.com/danielharding" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
+    <div class="container">
+        <section id="front" class="card">
+            <div class="banner">
+                <p>Explainer</p>
+            </div>
+            <div class="tab">
+                <p><i class="fab fa-js-square" aria-hidden="true"></i>JavaScript</p>
+            </div>
+            <div class="main">
+                <h1><i class="fas fa-filter" aria-hidden="true"></i>array.filter( )</h1>
+                <ol>
+                    <li>Takes an array</li>
+                    <li>A callback function filters the array</li>
+                    <li>Filter is applied to each array item</li>
+                    <li>If the value matches the filter (truthy), it's added to a new array</li>
+                    <li>If it doesn't match (falsy), ignore it</li>
+                    <li>Returns a new array</li>
+                </ol>
+            </div>
+        </section>
+        <section id="back" class="card hide">
+            <div class="banner">
+                <p>Example</p>
+            </div>
+            <div class="tab">
+                <p><i class="fab fa-js-square"></i>JavaScript</p>
+            </div>
+            <div class="main">
+                <h1><i class="fas fa-filter"></i>array.filter( )</h1>
+                <ul>
+                    <li><code>var fruits = ['pear', 'banana', 'plum'];</code></li>
+										<li class="comment">Fruits contains an array with 3 strings</li>
+										<li><code>const result = fruits.filter(fruit => fruit.length < 5); </code></li>
+                    <li class="comment">Fruit represents each array item</li>
+                    <li><code>console.log(result);</code></li>
+                    <li class="comment">Values less than 5 characters are added to a new array and stored in result</li>
+                    <li><code>// output: Array ['pear', 'plum']</code></li>
+                </ul>
+            </div>
+        </section>
+        <button onclick="toggleContent()" id="showButton" class="">Show me the code!</button>
+        <button onclick="toggleContent()" id="explainButton" class="hide">Explain it!</button>
+    </div>
